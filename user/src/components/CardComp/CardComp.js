@@ -48,6 +48,7 @@ const CardComp = ({ title,domain,qdes, description, alertDesc, hintUrl, correctA
         if (correctAnswer && textInput.toLowerCase() === correctAnswer.toLowerCase()) {
             setIsCorrect(true);
              updatedScore = userScore.score + getQuestionPoints();
+             
             // Create a new array with updated score added
         }
         else{

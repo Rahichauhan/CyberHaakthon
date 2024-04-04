@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import NavBar1 from '../../components/Navbar1/Navbar';
+=======
+import React, { useState } from "react";
+import './login.css'
+import { Link, useNavigate } from "react-router-dom"; 
+import Navbar from "../../components/Navbar1/Navbar";
+>>>>>>> 5d6b8898d7c7959e76bd15e40638e7bbaaf29d57
 
 const Login = ({ setId }) => {
     const [email, setEmail] = useState('');
@@ -24,8 +31,13 @@ const Login = ({ setId }) => {
                 throw new Error('Enter valid credentials');
             }
             const data = await response.json();
+<<<<<<< HEAD
             setId(data.id); // Set the user ID using the setId function
           
+=======
+            //setId(data._id); // Set the user ID using the setId function
+            //console.log(data);
+>>>>>>> 5d6b8898d7c7959e76bd15e40638e7bbaaf29d57
 
             navigate('/Homepage');
 

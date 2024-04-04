@@ -10,7 +10,11 @@ function Body({id}) {
     
         const fetchData = async () => {
             try {
+<<<<<<< HEAD
                 const response = await fetch(`http://localhost:3000/getspecificuser/${id}`);
+=======
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/getspecificuser/${id}`);
+>>>>>>> 5d6b8898d7c7959e76bd15e40638e7bbaaf29d57
                 const data = await response.json();
                 
                 if (data.is_Selected === true) {
