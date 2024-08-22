@@ -27,7 +27,7 @@ pipeline {
         gradle 'gradle-8.10' // Replace 'gradle' with the exact name if different
     }
     environment {
-        VERCEL_TOKEN = credentials('vercel-token') // Store your Vercel token in Jenkins credentials
+        VERCEL_TOKEN = credentials('Rahi12345') // Store your Vercel token in Jenkins credentials
     }
     stages {
         stage("Install Vercel CLI") {
